@@ -1,0 +1,135 @@
+Program Used
+
+Int lamp1=2; 
+Int lamp2=3;
+Int lamp3=4; Int music=5; 
+Int pc=6; Int mobile=7; 
+Int fan=8; 
+Int socket=9; 
+
+
+Int Received=0; 
+Int lamp1_state=0; 
+Int lamp2_state=0; 
+Int lamp3_state=0; 
+Int music_state=0; 
+Int pc_state=0; 
+Int mobile_state=0; 
+Int fan_state=0; 
+Int socket_state=0; 
+
+Void setup(){ 
+
+Serial.begin(9600); 
+pinMode(lamp1,OUTPUT); 
+pinMode(lamp2,OUTPUT); 
+pinMode(lamp3,OUTPUT); 
+pinMode(music,OUTPUT); 
+pinMode(pc,OUTPUT); 
+pinMode(mobile,OUTPUT); 
+pinMode(fa Int lamp1=2;
+
+}
+
+Void loop(){
+If(Serial.available()>0)
+{
+ Received = Serial.read();
+
+}
+If (lamp1_state == 0 && Received == ‘1’)
+ {
+ digitalWrite(lamp1,HIGH);
+ lamp1_state=1;
+ Received=0;
+ }
+If (lamp1_state ==1 && Received == ‘1’)
+ {
+ digitalWrite(lamp1,LOW);
+ lamp1_state=0;
+ Received=0;
+ }
+If (lamp2_state == 0 && Received == ‘2’)
+ {
+ digitalWrite(lamp2,HIGH);
+lamp2_state=1;
+ Received=0;
+ }
+If (lamp2_state ==1 && Received == ‘2’)
+ {
+ digitalWrite(lamp2,LOW);
+ lamp2_state=0;
+ Received=0;
+ }
+If (lamp3_state == 0 && Received == ‘3’)
+ {
+ digitalWrite(lamp3,HIGH);
+ lamp3_state=1;
+ Received=0;
+ }
+If (lamp3_state ==1 && Received == ‘3’)
+ {
+ digitalWrite(lamp3,LOW);
+ lamp3_state=0;
+ Received=0;
+ }
+If (music_state == 0 && Received == ‘4’)
+ {
+ digitalWrite(music,HIGH);
+ music_state=1;
+ Received=0;
+ }
+If (music_state ==1 && Received == ‘4’)
+ {
+digitalWrite(music,LOW);
+ music_state=0;
+ Received=0;
+ }
+If (pc_state == 0 && Received == ‘5’)
+ {
+ digitalWrite(pc,HIGH);
+ pc_state=1;
+ Received=0;
+ }
+If (pc_state ==1 && Received == ‘5’)
+ {
+ digitalWrite(pc,LOW);
+ pc_state=0;
+ Received=0;
+ }
+If (mobile_state == 0 && Received == ‘6’)
+ {
+ digitalWrite(mobile,HIGH);
+ mobile_state=1;
+ Received=0;
+ }
+If (mobile_state ==1 && Received == ‘6’)
+ {
+ digitalWrite(mobile,LOW);
+ mobile_state=0;
+ Received=0;
+ }
+If (fan_state == 0 && Received == ‘7’)
+ {
+ digitalWrite(fan,HIGH);
+ fan_state=1;
+ Received=0;
+ }
+If (fan_state ==1 && Received == ‘7’)
+ {
+ digitalWrite(fan,LOW);
+ fan_state=0;
+ Received=0;
+ }
+If (socket_state == 0 && Received == ‘8’)
+ {
+ digitalWrite(socket,HIGH);
+ socket_state=1;
+ Received=0;
+ }
+If (socket_state ==1 && Received == ‘8’)
+ {
+ digitalWrite(socket,LOW);
+ socket_state=0;
+ Received=0;
+ }
